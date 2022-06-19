@@ -1,0 +1,138 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+
+:root {
+    --soft-blue: hsl(215, 51%, 70%);
+    --cyan: hsl(178, 100%, 50%);
+    --dk-blue-main: hsl(217, 54%, 11%);
+    --dk-blue-card: hsl(216, 50%, 16%);
+    --dk-blue-line: hsl(215, 32%, 27%);
+    --white: hsl(0, 0%, 100%);
+}
+body {
+    font-family: 'Outfit', sans-serif;
+    background-color: var(--dk-blue-main);
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    justify-content: center;
+    align-content: center;
+}
+
+.main {
+    background-color: var(--dk-blue-card);
+    width: 340px;
+    margin: 0 auto;
+    border-radius: 20px;
+}
+
+.images {
+    height: 340px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+   }
+
+.eq-first {
+    width: 300px;
+    border-radius: 20px;
+    margin: 22px auto;
+    display: block;
+    z-index: 1;
+}
+
+
+.color-overlay {
+    position: absolute;
+    height: 89%;
+    width: 90%;
+    background-color: var(--cyan);
+    opacity: 0.0;
+    z-index: 3;
+    border-radius: 20px;
+    transition: 0.3s ease-in-out;
+}
+
+.color-overlay:hover {
+    cursor: pointer;
+    opacity: 0.5;
+}
+.eye {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+
+.eye:hover {
+    cursor: pointer;
+    display:inline;
+}
+.text-card {
+    padding: 0 20px;
+}
+
+h1 {
+    color: var(--white);
+    font-size: 22px;
+    padding-bottom: 15px;
+    font-weight: 600;
+}
+
+p {
+    font-size: 18px;
+    color: var(--soft-blue);
+    font-weight: 300;
+    line-height: 28px;
+}
+
+.avatar {
+    height: 30px;
+    width: 30px;
+    border: 2px solid var(--white);
+    border-radius: 50%;
+    margin-right: 20px;
+}
+
+span {
+    color: var(--white);
+}
+
+.info {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 0;
+    border-bottom: 0.5px solid var(--soft-blue);
+}
+
+.price {
+    color: var(--cyan);
+    font-weight: 600;
+}
+
+.owner {
+    display: flex;
+    padding: 20px 0;
+}
+
+.footer {
+    text-align: center;
+}
+
+.attribution { 
+    color: var(--white);
+    font-size: 11px;   
+}
+
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
+
